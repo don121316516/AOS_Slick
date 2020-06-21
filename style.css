@@ -7,17 +7,70 @@
   font-family: 微軟正黑體;
 }
 
+body {
+  background-image: url(./img/arroway.de_tiles-35_d100.jpg);
+}
+
 nav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 40% 20% 20%;
-      grid-template-columns: 20% 40% 20% 20%;
+  -ms-grid-columns: 20% 60% 10% 10%;
+      grid-template-columns: 20% 60% 10% 10%;
   padding: 20px 5px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  position: fixed;
+  z-index: 1;
+  background: #ffffff55;
+  width: 100%;
+  border-bottom: 2px solid gray;
+}
+
+nav #logo {
+  font-size: 24px;
 }
 
 nav a {
   -webkit-text-emphasis: none;
           text-emphasis: none;
   color: #252525;
+}
+
+#banner {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#about img {
+  height: 300px;
+}
+
+#about2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+#about2 img {
+  height: 300px;
+}
+
+#brand {
+  width: 25%;
+  margin: 0 auto;
+}
+
+#brand img {
+  margin: 20px;
 }
 /*# sourceMappingURL=style.css.map */
