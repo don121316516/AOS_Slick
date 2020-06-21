@@ -1,0 +1,19 @@
+$color-black:#252525;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 20% 40% 20% 20%;   
+    padding: 20px 5px;
+
+    a{
+        text-emphasis: none;
+        color: #252525;
+    }
+}
