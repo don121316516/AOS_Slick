@@ -31,16 +31,17 @@ nav{
 }
 
 #banner{
-    height: 100vh;
     object-fit: cover;
 }
 
 @mixin section-box {
+    // 溢出 隱藏
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-
+    margin-top: 50px;
     img{
-        height: 300px;
+        height: 600px;
     }
 }
 
@@ -50,6 +51,13 @@ nav{
 
 #about2{
     @include section-box();
+    grid-template-areas:"text phone";
+    *:nth-child(1){
+        grid-area: phone;
+    }
+    *:nth-child(2){
+        grid-area: text;
+    }
 }
 
 #brand{
@@ -60,9 +68,8 @@ nav{
     }
 }
 
-footer {
+footer{
+    margin-top: 100px;
     text-align: center;
-    margin: 300px auto;
-    padding: 30px 0;
-    color: $color-black-33;
+
 }
